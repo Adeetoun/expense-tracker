@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.google.com/specimen/DM+Sans');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 15px;
+}
+h2{
+    font-weight: 700;
+    color: #fff;
+}
+header p {
+    color: #fff;
+    font-size: 14px;
+}
+body{
+    font-family: 'DM Sans';
+    background-color: hsl(27, 66%, 92%);
+}
+header{
+    background: hsl(10, 79%, 65%);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 20px;
+}
+main{
+    width: 50%;
+    margin: 0 auto;
+    background: hsl(33, 100%, 98%);
+    border-radius: 15px;
+    margin-top: 10px;
+}
+h3{
+    margin: 10px;
+    padding: 10px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.bar-chart{
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    align-items: flex-end;
+}
+.bar-chart .bar{
+    width: 50px;
+    background-color: hsl(10, 79%, 65%);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px; 
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+}
+.bar-chart .bar:active{
+    background-color: hsl(10, 92%, 80%);
+}
+.bar-chart .bar:nth-child(3) {
+    background-color: hsl(186, 34%, 60%);
+}
+.bar-chart .bar:nth-child(3):active{
+    background-color: hsl(186, 79%, 81%);
+}
+span.tooltip{
+    display: none;
+    position: absolute;
+    bottom: 105%;
+    left: 50%;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #333;
+    font-size: 14px;
+    transform: translate(-50%);
+}
+.day{
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: hsl(28, 10%, 53%);
+}
+hr{
+    margin-top: 10px;
+    margin: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 15px;
+}
+.footer p{
+    color: hsl(28, 10%, 53%);
+    font-size: 14px;
+}
+.footer .foot-2{
+    margin-top: 10px;
+    text-align: end;
+}
+
+@media (max-width: 768px) {
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    .bar-chart{
+        height: 220px;
+    }
+    h3{
+        margin: 10px;
+        padding: 10px;
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+}
